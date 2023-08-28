@@ -45,7 +45,29 @@
             </div>
 
             <ul class="opções">
-                <li class="opções__item">Categorias</li>
+                <input type="checkbox" id="opções-menu" class="opções__botão">
+                <label for="opções-menu">
+                    <li class="opções__item">Categorias</li>
+                </label>
+
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Programação</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Front-end</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Infraestrutura</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Business</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Design & UX</a>
+                    </li>
+                </ul>
+
                 <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
                 <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
             </ul>
@@ -109,6 +131,31 @@
                     <a href="#" class="botões__ancora">Saiba mais</a>
                 </div>
             </div>
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+            <!-- Slider main container -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>   
+    
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="Livro sobre métricas ageis da alura books"></div>
+                <div class="swiper-slide"><img src="img/UX.svg" alt="Livro sobre UX da alura books"></div>
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafla e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade da alura books"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre guia de front-end da alura books"></div>
+                <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro sobre tuning de SQL da alura books"></div>
+                </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
 
             <div class="card">
                 <div class="card__descrição">
@@ -162,15 +209,17 @@
         </section>
 
         <section class="contato">
-            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="contato__descrição">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
             <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
         </section>
 
         <hr/>
 
         <footer class="rodapé">
-            <h2 class="rodapé__titulo">Grupo Alura</h2>
+            <h2 class="rodapé__titulo">Produzido por Fernando Machado. Com apoio do Grupo Alura</h2>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
